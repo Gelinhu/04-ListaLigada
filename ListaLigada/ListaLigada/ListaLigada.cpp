@@ -73,7 +73,7 @@ void menu()
 void inicializar()
 {
 
-	// se a lista j· possuir elementos
+	// se a lista j√° possuir elementos
 	// libera a memoria ocupada
 	NO* aux = primeiro;
 	while (aux != NULL) {
@@ -158,7 +158,7 @@ void excluirElemento()
 		NO* aux = primeiro;
 		NO* anterior = NULL;
 
-		// Procurar o elemento na lista
+		
 		while (aux != NULL && aux->valor != exc) {
 			anterior = aux;
 			aux = aux->prox;
@@ -169,7 +169,7 @@ void excluirElemento()
 			return;
 		}
 
-		// Se o elemento a ser excluÌdo È o primeiro da lista
+		
 		if (anterior == NULL) {
 			primeiro = aux->prox;
 		}
@@ -204,7 +204,7 @@ void buscarElemento()
 
 
 // retorna um ponteiro para o elemento buscado
-// ou NULL se o elemento n„o estiver na lista
+// ou NULL se o elemento n√£o estiver na lista
 NO* posicaoElemento(int numero)
 {
 	NO* aux = primeiro;
